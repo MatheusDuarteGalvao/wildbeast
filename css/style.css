@@ -15,6 +15,12 @@ a {
 	text-decoration: none;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+	border-radius: 5px;
+}
+
 /* GRID GERAL */
 
 .estrutura {
@@ -88,14 +94,28 @@ a {
 	background: #B07DFB;
 }
 
+/*CONTENT*/
 .content {
 	grid-area: content;
 }
 
+/*ANÚNCIOS*/
 .anuncios {
 	grid-area: anuncios;
+	display: grid;
+	align-content: start;
+	padding: 30px;
+	gap: 30px;
 }
 
+/*FOOTER*/
 .footer {
-	grid-area: anuncios;
+	grid-area: footer;
+	background: linear-gradient(135deg, #8844ee, #B07DFB);
+}
+
+.footer p {
+	color: white;
+	text-align: center;
+	padding: 30px;
 }
